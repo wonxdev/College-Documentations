@@ -1,0 +1,84 @@
+1. Algo Calculate Rectangle Area
+START
+Get Width, Length
+Area = Width * Length
+Output Area
+END
+
+#include <stdio.h>
+
+int main()
+{
+    int width, length, area;
+    printf("Rectangle Area Calculator\n");
+    printf("==========================\n");
+    
+    printf("Input Rectangle Length: ");
+    scanf("%d", &length);
+    
+    printf("Input Rectangle Width: ");
+    scanf("%d", &width);
+    
+    area = width * length;
+    printf("Area of the Rectangle is: %d", area);
+
+    return 0;
+}
+
+
+2. Second into Hour and Minute Unit
+START
+Input Second
+Hour = Second / 3600
+Minute = (Second % 3600) / 60
+Output Hour
+Output Minute
+END
+
+#include <stdio.h>
+
+int main()
+{
+    int second, minute, hour;
+    printf("Second to Hour-Minute Format\n");
+    printf("==========================\n");
+    
+    printf("Input Time (in Second): ");
+    scanf("%d", &second);
+    
+    hour = second / 3600;
+    minute = (second % 3600) / 60;
+    second = second - (hour * 3600) - (minute * 60);
+    
+    printf("It's %d hour(s)", hour);
+    printf("and %d minute(s)", minute);
+    printf("and %d second(s)", second);
+
+    return 0;
+}
+
+
+3. Odd / Even
+
+
+
+4. Circle Area
+#include <stdio.h>
+#define Pi 3.14
+
+int main()
+{
+    int radius;
+    float area;
+    printf("Circle Area Calculator\n");
+    printf("==========================\n");
+    
+    printf("Input Circle Radius (in cm): ");
+    scanf("%d", &radius);
+    
+    area = Pi * radius * radius;
+    
+    printf("Circle Area is %.2f cm.", area);
+
+    return 0;
+}
