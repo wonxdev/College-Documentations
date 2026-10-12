@@ -8,5 +8,11 @@ int main() {
     *p = 50;
     printf("Nilai a sekarang = %d\n", a);
 
+    int x;
+    scanf("%d", &x);
+
+    if (x < 0)      printf("X is below 0"),  printf("Lha iki 2 line");
+    else if (x = 0) printf("X is 0");
+
     return 0;
 }
