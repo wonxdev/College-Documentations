@@ -24,16 +24,22 @@
  *   2
  */
 
- #include <stdio.h>
+#include <stdio.h>
 
- int main() {
-    int a, b, c, d, e, f  ;
-    int sum;
-
+int main() {
+    int a, b;
+    
+    // Process line 1
     scanf("%d + %d =", &a, &b);
-    sum = a + b;
-
-    printf
+    printf("%d\n", a + b);
+    
+    // Process line 2
+    scanf("%d + %d =", &a, &b);
+    printf("%d\n", a + b);
+    
+    // Process line 3
+    scanf("%d + %d =", &a, &b);
+    printf("%d\n", a + b);
 
     return 0;
- }
+}
