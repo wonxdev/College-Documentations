@@ -1,0 +1,5 @@
+Pointer 
+int a = 7
+
+misal int *p = &a
+*p = 30
