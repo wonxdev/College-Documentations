@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 int main () {
-    char c = '';
+    char c = ' ';
 
     if(isblank(c))
         printf("Karakter adalah spasi atau tab.\n");
@@ -23,6 +24,16 @@ int main () {
     else
         printf("Karakter bukan huruf kapital.\n");
 
+    char w1[100], w2[100];
+    printf("Input String: ");
+    scanf("%[^\n]", w1); // Atau pake gets(w1);
+
+    int len = strlen(w1); // Cari panjang input
+
+    for(int i = 0; i < len; i++)
+        w2[i] = toupper(w1[i]);
+
+    printf("%s\n", w2);
 
     return 0;
 }
