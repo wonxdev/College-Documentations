@@ -27,13 +27,13 @@ int main() {
     }
 
     for (counter = 1; counter <= loopcounter; counter++) {
-        if (daycounter % 7 == 0)        printf("Sunday");
-        else if (daycounter % 7 == 1)   printf("Monday");
-        else if (daycounter % 7 == 2)   printf("Tuesday");
-        else if (daycounter % 7 == 3)   printf("Wednesday");
-        else if (daycounter % 7 == 4)   printf("Thursday");
-        else if (daycounter % 7 == 5)   printf("Friday");
-        else if (daycounter % 7 == 6)   printf("Saturday");
+        if (daycounter % 7 == 0)        printf("\n Sunday");
+        else if (daycounter % 7 == 1)   printf("\n Monday");
+        else if (daycounter % 7 == 2)   printf("\n Tuesday");
+        else if (daycounter % 7 == 3)   printf("\n Wednesday");
+        else if (daycounter % 7 == 4)   printf("\n Thursday");
+        else if (daycounter % 7 == 5)   printf("\n Friday");
+        else if (daycounter % 7 == 6)   printf("\n Saturday");
     }
     
     return 0;
