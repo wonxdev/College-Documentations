@@ -1,18 +1,35 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
-    int a = 10, b = 20;
-    int *const p = &a;
+    int t;
+    scanf("%d", &t);
 
-    printf("p menunjuk a, nilai = %d\n", *p);
-    *p = 50;
-    printf("Nilai a sekarang = %d\n", a);
+    int r, c;
+    char Command[15];
+    scanf("%d %d %s", &r, &c, &Command);
 
-    int x;
-    scanf("%d", &x);
+    int Matrix[r][c];
 
-    if (x < 0)      printf("X is below 0"),  printf("Lha iki 2 line");
-    else if (x = 0) printf("X is 0");
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &Matrix[r][c]);
+        }
+    }
+
+    char TRANSPOSE[] = "TRANSPOSE";
+
+    int Command1 = strcmp(Command, TRANSPOSE);
+
+    if (Command1 = 0) {
+        
+    }
+
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            printf("%d ", Matrix[r][c]);
+        }
+    }
 
     return 0;
 }

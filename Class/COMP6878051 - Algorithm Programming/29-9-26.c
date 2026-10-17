@@ -24,6 +24,6 @@ int main() {
     printf("%zu\n", strlen(teks));
 
     printf("Huruf: %d\n", huruf);
-    printf("Angka: %d\n", teks);
+    printf("Angka: %d\n", angka);
     return 0;
 }

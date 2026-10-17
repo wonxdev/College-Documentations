@@ -61,6 +61,7 @@
  */
 
 #include <stdio.h>
+#include <ctype.h>
 
 int main() {
     int r;
@@ -69,14 +70,65 @@ int main() {
     printf("\nInput Matrix Dimensions (... ...): ");
     scanf("%d %d", &r, &c);
 
-    char matrix[r][c];
-
-    if (r > 10) if (c > 10)     printf("Invalid dimensions! Try again");
-    else {
+    if (r < 1 || r > 10 || c < 10 || c > 10) {
+        printf("Invalid dimensions! Try again");
+        return 0;
+    } 
+    else if ((0 < r && r < 11) && (0 < c && c < 11)) {
         for (int i = 0; i < r; i++) {
             for (int j = 0; j < c; j++) {
-                scanf("%c ", &matrix[r][c]);
+                scanf(" %c", &matrix[i][j]);
+            }
+        }
+        char matrix[r][c];
+    }
+
+    int UpCount, ASCIISum;
+    char MaxASCII = 0;
+    char MinASCII = 127;
+    UpCount  = 0;
+    ASCIISum = 0;
+
+    for (int a = 0; a < r; a++) {
+        for (int b = 0; b < c; b++) {
+            if (matrix[a][b] == '!') {
+                break;
+            } else if (matrix[a][b] == '#') {
+                continue;
+            }
+
+            if (isalpha(matrix[a][b])) {
+                if (isupper(matrix[a][b])) {
+                    UpCount++;
+                    if ((int)matrix[a][b] > (int)MaxASCII) {
+                        MaxASCII = matrix[a][b];
+                    }
+                    if ((int)matrix[a][b] < (int)MinASCII) {
+                        MinASCII = matrix[a][b];
+                    }
+                }
+            }
+
+            else if (isdigit(matrix[a][b])) {
+                ASCIISum += (int)matrix[a][b];
+                if ((int)matrix[a][b] > (int)MaxASCII) {
+                    MaxASCII = matrix[a][b];
+                }
+                if ((int)matrix[a][b] < (int)MinASCII) {
+                    MinASCII = matrix[a][b];
+                }
             }
         }
     }
+    
+    printf("\n--- Matrix Analysis ---");
+    printf("\nUppercase Count: %d", UpCount);
+    printf("\nASCII Total Sum: %d", ASCIISum);
+    if (MaxASCII == 0)       printf("\nMax ASCII Char: N/A");
+    else if (MaxASCII > 0)  printf("\nMax ASCII Char: %c", MaxASCII);
+    
+    if (MinASCII == 127)      printf("\nMin ASCII Char: N/A");
+    else if (MinASCII < 127) printf("\nMin ASCII Char: %c", MinASCII);
+
+    return 0;
 }

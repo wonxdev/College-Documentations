@@ -40,5 +40,6 @@ int main () {
     printf("\nTekan Enter untuk keluar...");
     getchar();
     getchar();
+    
     return 0;
 }
