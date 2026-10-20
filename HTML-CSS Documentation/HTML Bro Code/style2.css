@@ -1,0 +1,14 @@
+body{
+    background-color: slategray; /* Color using a name */
+}
+
+#p1{
+    color:rgb(71, 215, 255) /* Color using RGB */
+}
+
+#p2{
+    color: #82f300; /* Color using HEX */
+}
+#p3{
+    color: hsl(0, 100%, 47%) /* Color using HSL */
+}

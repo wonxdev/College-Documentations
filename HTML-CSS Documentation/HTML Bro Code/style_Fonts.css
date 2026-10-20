@@ -1,0 +1,16 @@
+@font-face{
+    src:url(fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf)
+}
+
+
+h1{
+    font-family: Roboto;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+}
+

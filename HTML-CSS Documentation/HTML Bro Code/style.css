@@ -1,0 +1,21 @@
+h1{
+    background-color: darkblue;
+    color:goldenrod;
+}
+
+p{
+    background-color: darkred;
+    color: gold;
+}
+#p1{
+    color:aqua;
+}
+#p2{
+    color:darkblue;
+}
+.odd{
+    background-color: yellow;
+}
+.even{
+    background-color: green;
+}

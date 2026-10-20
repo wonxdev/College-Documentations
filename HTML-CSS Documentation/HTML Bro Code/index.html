@@ -4,40 +4,400 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I'm Learning from BroCode</title>
+    <link rel="icon" type="image/png" href="img/Green Day Logo.png">
 </head>
 <body>
-    <!-- h1 for Highlights -->
-    <!-- p for paragraph texts -->
-    <!-- a href="" for hyperlinks -->
-    <h1> This is a H1 Heading </h1>
-    <h2> This is a H2 Heading </h2>
-    <h3> This is a H3 Heading </h3>
-    <h4> This is a H4 Heading </h4>
-    <h5> This is a H5 Heading </h5>
+    <!-- HEADER -->
+    <header
+     style="background-color: goldenrod;"
+     >
+        <h1>Welcome to A Website WONxDEV Made</h1>
+        <h2>I made this with Bro Code Youtube</h2>
 
-    <hr> <!-- Horizontal Ruler -->
-    <!-- Adds a horizontal Line -->
+        <a href="">Home</a>
+        <a href="">About Me</a>
+        <a href="">LinkedIn</a>
+        <a href="">Instagram</a>
+        <hr>
+    </header>
 
-    <br> <!-- Line Break -->
+    <main>
+        <!-- CSS -->
+         <a href="css.html">
+            Click me to go to the CSS Training Page
+         </a>
 
-    <p>
-        Some text goes here, this is for paragraph.
-        We can use lorem and then tab for some gibberish.
-    </p>
+        <!-- h1 for Highlights -->
+        <!-- p for paragraph texts -->
+        <!-- a href="" for hyperlinks -->
+        <h1> This is a H1 Heading </h1>
+        <h2> This is a H2 Heading </h2>
+        <h3> This is a H3 Heading </h3>
+        <h4> This is a H4 Heading </h4>
+        <h5> This is a H5 Heading </h5>
+
+        <hr> <!-- Horizontal Ruler -->
+        <!-- Adds a horizontal Line -->
+
+        <br> <!-- Line Break -->
+
+        <h3> This is an Image. </h3>
+        <a href="https://en.wikipedia.org/wiki/Green_Day">
+            <img src="img/Green Day Logo.png"
+            alt="This is a picture of a green day logo"
+            height="200"> <!-- We can turn this into a hyperlink too-->
+        </a>
+        
+        <br>
+
+        <img src="img/Green Day Grenade GIF.gif"
+        alt="Green Day Gif"
+        height="200"
+        width="180">
+
+        <p>
+            Some text goes here, this is for paragraph.
+            We can use lorem and then tab for some gibberish.
+        </p>
+        
+        <h5> Heres the lorem text </h5>
+        <pre> <!-- Also can use <pre> as in pre formatted text -->
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Odit illum facilis culpa illo sit rerum quibusdam deserunt
+            aperiam explicabo a consequuntur ullam ipsa quod cum unde deleniti,
+            maxime perferendis omnis.
+        </pre>
+
+        <br>
+
+        <a href="pageone.html"
+        target="_blank" 
+        title="Goes to page one"> 
+        </a>
+
+        <h2> This is an Audio File </h2>
+        <p>The Grouch by Green Day</p>
+        <audio controls loop>
+            <source src="audio/The Grouch.mp3" type="audio/mpeg">
+            <!-- We can also use fallbacks with another file format -->
+        </audio>
+
+        <br>
+
+        <h3>This is another Audio File</h3>
+        <p>Makeout Party by Green Day</p>
+        <audio controls loop>
+            <source src="audio/Makeout Party.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- Attributes / controls = Autoplay, muted, loop, etc-->
+        <!-- Controls are to show the player to download, skip, change volume -->
+        <hr>
+        <br>
+
+        <a target="_blank" href="https://wonxdev.github.io">
+            <video width="200" controls>
+                <source src="Video1.mp4" type="video/mp4">
+            </video>
+        </a>
+        
+        <p> This is a normal text </p> 
+        <p> This is a <b>Bold</b> text </p> <!-- Bold -->
+        <p> This is a <i>Italic</i> text </p> <!-- Italic -->
+        <p> This is a <u>Underlined</u> text </p> <!-- Underlined -->
+        <p> This is a <big>Big</big> text </p> 
+        <p> This is a <small>Small</small> text </p>
+        <p> This is a <sub>Subscript</sub> text </p>
+        <p> This is a <sup>Superscript</sup> text </p>
+        <p> This is a <tt>Monospace</tt> text </p>
+        <p> This is a <mark style="background-color: blueviolet;">Highlighted</mark> text</p> <!-- Can use CSS to change the color -->
+
+
+        <!-- Grouping together HTML -->
+        <!-- <span> inline container to group elements for styling -->
+        <!-- <div> block container to group elements -->
+
+        <h1>
+            <span style=" background-color: royalblue;">
+                This is a Span Title 
+            </span>
+        </h1>
+
+        <h1>
+            <div style=" background-color: royalblue;">
+                This is a div title 
+            </div>
+        </h1>
+
+        <p>
+            <span style=" background-color: royalblue;">
+                This is a Span Sentence
+            </span>
+        </p>
+
+        <p>
+            <div style="background-color: royalblue;">
+                This is a Div Sentence
+            </div>
+        </p>
+
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <span style="background-color: red;">
+                Magnam neque atque molestias, facere commodi, sequi id,
+                dolore odio officia sit voluptas modi assumenda minus recusandae.
+            </span>
+            Fugit odio atque animi mollitia?
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ut praesentium sequi cum dignissimos in optio ex suscipit ullam laboriosam
+            error veniam, a laborum, doloribus modi, sapiente est ea cupiditate?
+            <div style="background-color: gold;">
+                Illo.
+            </div>
+        </p>
+
+
+        <!-- Lists in HTML -->
+        <!-- Unordered List -->
+        <h4> Groceries </h4>
+        <ul>
+            <li>Milk</li>
+            <li>Eggs</li>
+            <li>Bread</li>
+            <li>Coffee Supplies</li>
+            <ul>
+                <li>Coffee Grounds</li>
+                <li>Creamer</li>
+                <li>Sugar</li>
+            </ul>
+            <li>Amongus</li>
+        </ul>
+
+        <!-- Ordered List -->
+        <h4>To Do List</h4>
+        <ol>
+            <li>Take a shower</li>
+            <li>Eat Breakfast</li>
+            <li>Go to College</li>
+            <li>Study College</li>
+                <ol>
+                    <li>Learn Discrete</li>
+                    <li>Learn Algorithm</li>
+                </ol>
+        </ol>
+
+        <!-- Description List -->
+        <h4>Creatures List</h4>
+        <dl style="background-color: gray; border:10px solid">
+            <dt>Dragon</dt>
+                <dd>
+                    is a mythical creature usually depicted as a giant, winged,
+                    scaly reptile or serpent with claws and fire-breathing abilities,
+                    though its meaning varies widely across history, culture, and language.
+                </dd>
+
+            <dt>Phoenix</dt>
+                <dd>
+                    a legendary immortal bird that
+                    cyclically regenerates or is reborn by rising from
+                    the ashes of its predecessor.
+                </dd>
+
+            <dt>Cyborg</dt>
+                <dd>
+                any living being that has both biological parts and
+                artificial,technological components  
+                </dd>
+        </dl>
+
+        <hr>
+
+        <!-- Table with HTML -->
+            <h3>Store Hours Table</h3>
+        <table width="500" border="1">
+                <tr style="background-color: aqua;"> <!-- Table Row -->
+                    <th width="100">Sunday</th>
+                    <th width="100">Monday</th>
+                    <th width="100">Tuesday</th>
+                    <th width="100">Wednesday</th>
+                    <th width="100">Thusday</th>
+                    <th width="100">Friday</th>
+                    <th width="100">Saturday</th>
+                </tr>
+                <tr align="center" style="background-color: brown;">
+                    <td>Closed</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>10-2</td>
+                </tr>
+        </table>
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- Button with HTML and CSS -->
+
+            <button onclick="doSomething()" style="font-size: 200%; background-color:gold; color:purple; border-radius: 25px;" >
+                Click me!
+            </button>
+
+            <button>
+                Don't Click Me!
+            </button>
+
+            <p id="Hello"> Hello </p>
+
+            <script>
+                function doSomething() {
+                    document.getElementById("Hello").innerHTML = Bye
+                }
+            </script>
+
+            <hr>
+            <br>
+
+            <!-- Form -->
+            <h2>This is a Form</h2>
+            
+            <form action="index.php" method="POST" enctype="mutlitype/form-data"> <!-- Sending data to this location-->
+
+                <label for="username">Username: </label>
+                <input type="text" id="username" placeholder="Amongus" minlength="5" maxlength="10" required> <!-- Must fill to submit-->
+
+                <br>
+                
+                <label for="password">Password: </label>
+                <input type="password" id="password" placeholder="Password" minlength="6" required>
+
+                <br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="amongus@gmail.com" required>
+
+                <br>
+
+                <label for="phone">Phone Number: </label>
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    placeholder="+62999-1234-56789" 
+                    pattern="\+62 [0-9]{3}-[0-9]{4}-[0-9]{4, 5}"
+                >
+
+                <br>
+
+                <label for="bday">Birthdate: </label>
+                <input type="date" id="bday">
+
+                <br>
+
+                <label for="quantity">Quantity: </label>
+                <input
+                type="number"
+                id="quantity"
+                value="1"
+                min="0"
+                max="10"
+                >
+                
+                <br>
+
+                <label for="title">Title: </label>
+
+                <label for="Mr.">Mr. </label>
+                <input 
+                type="radio" 
+                id="Mr."
+                value="Mr. "
+                name="title"
+                >
+
+                <label for="Ms.">Ms. </label>
+                <input 
+                type="radio" 
+                id="Ms."
+                value="Ms. "
+                name="title"
+                >
+
+                <!-- DropDown Menu -->
+                <label for="payment">Payment: </label>
+                <select id="payment">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="giftcard">Gift Card</option>
+                </select>
+
+                <br>
+
+                <!-- Checkbox -->
+                <label for="subscribe">Subscribe</label>
+                <input type="checkbox" id="subscribe">
+
+                <!-- Text Area -->
+                <label for="comment">Comment: </label>
+                <textarea
+                id="comment"
+                rows="3"
+                columns="25"
+                >
+                </textarea>
+
+                <br>
+                <label for="file">File: </label>
+                <input
+                type="file" 
+                id="file"
+                accept="image/png"
+                >
+
+
+
+                <br>
+                <br>
+
+                <input type="reset">
+                <input type="submit">
+
+                
+            </form>
+    </main>
+
+    <footer
+     style="background-color: goldenrod;"
+     >
+         <hr>
+         Author: WONxDEV <br>
+         &copy; Copyright Reserved <br>
+         <a href="mailto:nathansuwiji@gmail.com">
+            nathansuwiji@gmail.com
+         </a>
+    </footer>
+
+
+
     
-    <h5> Heres the lorem text </h5>
-    <pre> <!-- Also can use <pre> as in pre formatted text -->
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Odit illum facilis culpa illo sit rerum quibusdam deserunt
-        aperiam explicabo a consequuntur ullam ipsa quod cum unde deleniti,
-        maxime perferendis omnis.
-    </pre>
 
-    <br>
 
-    <a href="pageone.html"
-    target="_blank" 
-    title="Goes to page one"> 
-    </a>
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
